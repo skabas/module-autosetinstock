@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2018-2019 SKABAS LIMITED. All rights reserved.
+  ~
+  ~ @license LICENSE.txt
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="cataloginventory">
+            <group id="item_options">
+                <resource>Skabas_AutoSetInStock::config</resource>
+                <field id="auto_set_in_stock" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Automatically Set Product To In Stock</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Action is only taken when an item has a quantity greater than the out-of-stock threshold and it is set as out of stock.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
